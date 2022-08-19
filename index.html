@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/formulario.js"></script>
+    <title>Formulario</title>
+</head>
+<body onload="main()">
+    <header>
+        <section>
+            <a href="./index.html"><img src="./assets/iconos/html_css_js.png" alt="Icono taller HTML5, CSS3 y JavaScript"></a>
+            <div>
+                <h1>Taller final de HTML5, CSS3 y JavaScript</h1>
+                <h2>Desarrollado por: Jaime Sánchez</h2>
+            </div>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Formulario</a></li>
+                <li><a href="./frutas.html">Lista de frutas</a></li>
+                <li><a href="./portafolio_web.html">Portafolio web</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contáctenos</h2>
+        <form action="Formulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre">
+            <label for="correo">Correo(hotmail, outlook o gmail)</label>
+            <input type="email" required id="correo" placeholder="ejemplo@outlook.es">
+            <label for="asunto">Asunto del correo</label>
+            <input type="text" id="asunto" placeholder="Ingrese el asunto">
+            <label for="mensaje">Ingrese el mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="40" rows="5" placeholder="Escriba su mensaje"></textarea>
+            <button type="button" id="btnEnviar">Enviar</button>
+            <button type="button" id="btnResetear">Limpiar formulario</button>
+        </form>
+    </main>
+    <footer>
+        <h2>Contacto</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/jaime-orlando-s%C3%A1nchez-mendieta-4bba6b1a1/" target="_blank" class="active"><img src="./assets/iconos/linkedin.png" alt="Icono de linkedin"> LinkedIn</a></li>
+            <li><a href="https://github.com/josanchezm" target="_blank" class="active"><img src="./assets/iconos/github.png" alt="Icono de Github"> Github</a></li>
+            <li><img src="./assets/iconos/email.png" alt="Icono de Email"> jimisanchezm@hotmail.com</li>
+            <li><img src="./assets/iconos/whatsapp.png" alt="Icono de Whatsapp"> +573014924324</li>
+        </ul>
+    </footer>    
+</body>
+</html>

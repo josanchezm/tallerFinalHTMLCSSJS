@@ -1,0 +1,342 @@
+:root {
+    --active-color: #72f5d7;
+    --header-font-color: #def1fe;
+    --main-font-color: #000;
+    --footer-font-color: #def1fe;
+    --sm: 1.6rem;
+    --md: 1.8rem;
+    --lg: 2rem;
+    --h3: 2.2rem;
+    --h2: 2.4rem;
+    --h1: 2.8rem;
+}
+
+/* Estilos globales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+}
+
+a, ul {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: var(--lg);
+    padding: 10px 0;
+}
+
+h2 {
+    font-size: var(--h2);
+    text-align: center;
+}
+
+h3 {
+    font-size: var(--h3);
+    text-align: center;
+}
+
+p {
+    font-size: var(--lg);
+    text-align: center;
+}
+
+header, main, footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos header */
+
+header {
+    background: rgba(17, 16, 19, 0.80);
+    color: var(--header-font-color);
+}
+
+.estiloOscuroHeader {
+    background: rgba(17, 16, 19, 0.85); 
+}
+
+header > section {
+    width: 100%;
+    display: flex;
+    padding: 25px 0;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header > section a img {
+    width: 120px;
+}
+
+header > section div h1 {
+    font-size: var(--h1);
+    margin-bottom: 10px;
+}
+
+header > section button {
+    position: absolute;
+    right: 60px;
+    bottom: 15px;
+    width: auto;
+    border: 4px solid #000;
+    border-radius: 50%;
+}
+
+header > section button img {
+    width: 47px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+header nav {
+    width: 100%;
+    text-align: center;
+    background: rgb(29, 172, 191);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    transition-duration: .4s;
+}
+
+header nav ul li:hover {
+    background-color: rgb(15, 139, 155);
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+}
+
+header nav ul li a:active {
+    color: var(--active-color);
+}
+
+header nav ul li a {
+    color: var(--header-font-color);
+}
+
+/* Estilos main: formulario */
+
+main {
+    background: rgb(215, 235, 255);
+    color: var(--main-font-color);
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.estiloOscuroMain {
+    background: rgba(17, 16, 19, 0.90);
+    color: rgb(222, 241, 254); 
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--lg);
+}
+
+main form input {
+    width: 75%;
+    font-size: var(--sm);
+    padding: 5px;
+}
+
+#mensaje {
+    overflow: auto;
+    padding: 10px;
+    font-size: var(--sm);
+    border-radius: 8px;
+}
+
+main form button {
+    font-size: var(--lg);
+    padding: 5px 15px;
+    border: 1px solid #808080;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+main form button:hover {
+    background-color: rgba(163, 228, 241, 0.4);
+}
+
+main form button:active {
+    background-color: rgb(252, 247, 247);
+    color: var(--active-color);
+}
+
+/* Estilos main: lista de frutas */
+
+main > ol {
+    display: grid;
+    grid-template: 150px 150px / repeat(5,150px);
+    place-items: center;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+main > ol li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: var(--lg);
+    align-items: center;
+}
+
+.estiloParImpar {
+    color: rgb(52, 95, 203);
+    font-weight: bold;
+}
+
+main > ol li img {
+    width: 130px;
+    height: 130px;
+    padding: 15px;
+    border: 6px solid rgb(160, 160, 160);
+    border-radius: 8px;
+}
+
+.estiloParImparImg {
+    background-color: rgb(158, 237, 246);
+}
+
+/* Estilos main: portafolio web */
+
+.accesoTalleres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-bottom: 85px;
+}
+
+.accesoTalleres > div {
+    height: 200px;
+    padding: 10px;
+}
+
+.accesoTalleres > div ul, .accesoTalleres div h3 {
+    text-align: justify;
+    padding: 12px;
+    background: rgba(192, 246, 234, 0.6);
+    border: 2px solid rgba(141, 139, 139, 0.8);
+}
+
+.accesoTalleres > div ul li {
+    margin-bottom: 7px;
+}
+
+.accesoTalleres > div ul {
+    border-radius: 0px 0px 8px 8px;
+    display: block;
+}
+
+.talleresPseintJava {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 8px 8px 0 0;
+}
+
+.talleresPseintJava:hover {
+    background-color: rgba(29, 172, 191, 0.3);
+    cursor: pointer;
+}
+
+.talleresPseintJava img {
+    width: 60px;
+}
+
+.portafolio {
+    padding:  8px 15px;
+    background-color: rgba(132, 238, 214, 0.4);
+    border: 2px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: var(--h3);
+    font-weight: 700;
+}
+
+.portafolio:hover {
+    background-color: rgba(102, 215, 188, 0.7);
+}
+
+.portafolio:active {
+    color: #1194b8;
+}
+
+.talleres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.talleres li {
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+
+/* Estilos footer */
+
+footer {
+    background: rgba(17, 16, 19, 0.80);
+    color: var(--footer-font-color);
+    padding: 15px 0;
+}
+
+.estiloOscuroFooter {
+    background: rgba(17, 16, 19, 0.82);
+    color: rgb(222, 241, 254);
+}
+
+footer ul {
+    display: flex;
+    gap: 100px;
+}
+
+footer ul li a {
+    color: rgb(222, 241, 254);
+    transition-duration: .5s;
+}
+
+footer ul li a:hover {
+    background-color: rgb(222, 241, 254);
+    border: 4px solid #000;
+    border-radius: 10px;
+    color: #000;
+    padding: 10px 15px;
+}
+
+footer ul li img, footer ul li a img {
+    width: 25px;
+    position: relative;
+    right: 5px;
+    top: 3px;
+}
